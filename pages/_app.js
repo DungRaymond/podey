@@ -1,13 +1,24 @@
 import '../styles/globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, Box, Flex } from '@chakra-ui/react'
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <div id="mainbar" className="mainbar">
-        this is main bar
-      </div>
+      <Flex align="center" justify="space-between" h={82}>
+        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
+          Logo
+        </Flex>
+        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
+          Logo
+        </Flex>
+        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
+          Logo
+        </Flex>
+        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
+          Logo
+        </Flex>
+      </Flex>
       <Component {...pageProps} />
     </ChakraProvider>
   )
