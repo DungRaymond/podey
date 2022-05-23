@@ -33,14 +33,16 @@ export default function HomeBox (data) {
         <meta property="og:title" content="Pode newsletter" key="title"></meta>
       </Head>
 
-      
+      <div>
+        {data}
+      </div>
     </div>
   )
 }
 
 export async function getServerSideProps(context) {
 
-  const res = await fetch(`https://.../data`)
+  const res = await getLatestPostWithOffset(0)
   const data = await res.json()
 
   return {
