@@ -7,16 +7,20 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider>
       <Flex align="center" justify="space-between" h={82}>
         <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
-          Logo
+          Pode Corn
+        </Flex>
+        <Flex align='center' justify='center' width={360} height='80px' bg='gray.500' color='#fff'>
+          
+        </Flex>
+        
+        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
+          Tech-log
         </Flex>
         <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
-          Logo
+          Collection
         </Flex>
         <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
-          Logo
-        </Flex>
-        <Flex align='center' justify='center' width={180} height='80px' bg='gray.500' color='#fff'>
-          Logo
+          About
         </Flex>
       </Flex>
       <Component {...pageProps} />
