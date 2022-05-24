@@ -45,6 +45,7 @@ export async function getServerSideProps(context) {
   const res = await getLatestPostWithOffset(0)
   const data = await res.json()
 
+  
   return {
     props: {data},
 
