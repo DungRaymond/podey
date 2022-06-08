@@ -6,8 +6,8 @@ import Image from 'next/image'
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Flex align="center" justify="space-around" gridGap={2} h={82} fontFamily={['Rubik', 'sans-serif']}>
-        <Flex align='center' justify='center' width={240} fontStyle='italic' fontFamily={['Gabriela', 'cursive']} fontWeight={900} fontSize={38} height='80px'color='#1b331c'>
+      <Flex align="center" justify="space-around" gridGap={2} h={82} fontFamily={['Roboto', 'sans-serif']}>
+        <Flex align='center' justify='center' width={240} fontFamily={['Gabriela', 'serif']} fontStyle='italic' fontWeight={900} fontSize={38} height='80px'color='#1b331c'>
           <Link href='/'>
             Pode Corn
           </Link>
